@@ -1,0 +1,14 @@
+﻿@model List<tahap1.Controllers.HomeController.Person>
+
+
+<h2>PDF</h2>
+<table border="1" cellpadding="5" cellspacing="0">
+    <tr><th>Nama</th><th>Umur</th></tr>
+    @foreach (var item in Model)
+    {
+            <tr>
+                <td>@item.Nama</td>
+                <td>@item.Umur</td>
+            </tr>
+    }
+</table> 

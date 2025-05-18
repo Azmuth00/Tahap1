@@ -1,0 +1,20 @@
+﻿@model List<tahap1.Controllers.HomeController.Person>
+
+<h2>Export </h2>
+<a class="btn btn-danger" href="/Home/ExportPdf">Download PDF</a>
+<a class="btn btn-success" href="/Home/ExportExcel">Download Excel</a>
+
+<table class="table mt-3">
+    <thead>
+        <tr><th>Nama</th><th>Umur</th></tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+                <tr>
+                    <td>@item.Nama</td>
+                    <td>@item.Umur</td>
+                </tr>
+        }
+    </tbody>
+</table>
